@@ -13,6 +13,7 @@ console.log("server listening at port 3000 or oneline port");
 //server will run on this way
 app.get('/', function(req, res){
 
+    console.log(req.url);
     res.sendFile(__dirname + '/index.html');
 
 });
